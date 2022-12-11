@@ -1,0 +1,112 @@
+body{
+    margin: 0px;
+}
+
+#App{
+    display: grid;
+    grid-template-columns: 1fr 5px 1fr;
+    grid-template-rows: 20vh 1fr 20vh;
+    width: 1440px;
+    margin: auto;
+    justify-items: center;
+}
+
+header{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    width: 100%;
+    text-align: center;
+}
+
+header p{
+    font-size: 40px;
+    color: purple;
+}
+
+img{
+    width: 400px;
+    grid-column: 1/2;
+    grid-row: 2/3;  
+}
+
+#jouer{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.button{
+    width: 400px;
+    height: 80px;
+    border: solid 6px rgb(199, 27, 27);
+    border-radius: 25px;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+    align-self: end;
+}
+
+.button:hover{
+    background-color: rgb(199, 27, 27);
+}
+
+.button p{
+    position: relative;
+    bottom: 25px;
+}
+
+.button:hover p{
+    color: white;
+}
+
+#vertical_line{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    width: 6px;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom, purple, blue, orange, red);
+    background-image: -webkit-linear-gradient(to bottom, purple, blue, orange, red);
+    background-image: -moz-linear-gradient(to bottom, purple, blue, orange, red);
+    background-image: -o-linear-gradient(to bottom, purple, blue, orange, red);
+}
+
+#result{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+table{
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+td{
+    border: solid 6px purple;
+    font-size: 40px;
+}
+
+
+td:nth-of-type(even){
+    width: 150px;
+    padding-left: 10px;
+}
+
+#message{
+    border: solid 6px blue;
+    border-image: linear-gradient(purple, blue, orange, red);
+    border-image-slice: 1;
+    border-radius: 25px;
+    height: 200px;
+}
+
+#message p{
+    font-size: 40px;
+    margin: 10px;
+    max-width: 370px;
+    text-align: center;
+}
+
+#restart{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
